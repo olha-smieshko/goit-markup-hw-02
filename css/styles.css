@@ -1,15 +1,19 @@
 :root {
-  --primary-text-color: #2E2F42;
-  --text-color: #434455;
-  --accent-color: #4D5AE5;
-  --primary-white-color: #FFFFFF;
+    --primary-brand: #4D5AE5;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --primary-white-color: #FFFFFF;
 }
 
 
 
-.body {
+body {
     background-color:var(--primary-white-color);
-    color: var(--primary-text-color);
+    color: var(--dark);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: calc(24/16);
@@ -26,63 +30,65 @@
     line-height: calc(24/18);
     letter-spacing: 0.03em;
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--dark);
     }
 .logo-prefix {
-    color: var(--accent-color);
+    color: var(--primary-brand);
 }    
 .site-nav-item{
-    font-weight: 600;
+    font-weight: 500;
     text-decoration:none;
-    color:var(--primary-text-color);
+    color:var(--dark);
 }
 .header-contacts-item {
     text-decoration:none;
-    color:var(--text-color);
-    font-weight: 400;
+    color:var(--text);
 }
 
-.site-nav-item:hover, .site-nav-item:focus, .header-contacts-item:hover, .header-contacts-item:focus {
-    color: var(--text-color);
+.site-nav-item:hover, .site-nav-item:focus, .site-nav-item.current:hover, .site-nav-item.current:focus {
+    color: var(--text);
+}
+.header-contacts-item:hover, .header-contacts-item:focus {
+    color: var(--primary-brand);
 }
 .site-nav-item.current {
-    color:var(--accent-color);
+    color:var(--primary-brand);
 }
 /* Hero */
 .hero {
-    background:var(--primary-text-color) 
+    background:var(--dark) 
 }
 /* hero title */
 .hero-title {
     color: var(--primary-white-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: calc(60/56);
     text-align: center;
 }
 /* button */
 .button {
-    background-color: var(--accent-color);
+    background-color: var(--primary-brand);
     color: var(--primary-white-color);
     cursor: pointer;
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
     letter-spacing: 0.04em;
 
 }
 /* .button.primary {
-    background-color: var(--accent-color);
+    background-color: var(--primary-brand);
     color: var(--primary-white-color);
     }
 .button.secondary {
     background-color: var(--primary-white-color);
-    color: var(--accent-color);
+    color: var(--primary-brand);
 } */
 
 .button:hover, .button:focus {
-    background: var(--accent-color);
+    background: var(--primary-brand);
 }
 .button:active {
     background: #404BBF;
@@ -95,18 +101,20 @@
     text-transform: capitalize;
 }
 .list-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
 }
+.section-team {
+    background-color: var(--light);
+}
 /* list text */
 .list-text {
-    color: var(--text-color);
-    font-weight: 400;
+    color: var(--text);
 }
 /* Footer */
 .footer {
-    background: var(--primary-text-color);
+    background: var(--dark);
 }
 .footer-logo {
     font-family: 'Raleway', sans-serif;
@@ -120,42 +128,40 @@
     color: #F4F4FD;
 }
 .footer-logo-prefix {
-    color: var(--accent-color);
+    color: var(--primary-brand);
 }
 /* footer text */
 .footer-text {
-   color: #E7E9FC;
-   font-weight: 400;
+   color: var(--accent);
 }
 
 
 /* ===============PORTFOLIO================= */
 .filter-button {
-   background-color: #F4F4FD; 
-   color: var(--accent-color);
+   background-color: var(--light); 
+   color: var(--primary-brand);
    cursor: pointer;
    font-family: inherit;
-   font-weight: 600;
+   font-weight: 500;
    font-size: 16px;
    line-height: calc(24/16);
    letter-spacing: 0.04em;
     
 }
 .filter-button:hover, .filter-button:focus {
-    background-color: var(--accent-color); 
+    background-color: var(--primary-brand); 
     color: var(--primary-white-color);
     cursor: pointer;
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.04em; 
 }
 .work-link{
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--dark);
 }
 .card-content {
-    color: #F4F4FD;
-    font-weight: 400;
+    color: var(--light);
 }
