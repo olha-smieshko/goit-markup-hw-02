@@ -48,7 +48,7 @@ body {
 .site-nav-item:hover, .site-nav-item:focus, .site-nav-item.current:hover, .site-nav-item.current:focus {
     color: var(--text);
 }
-.header-contacts-item:hover, .header-contacts-item:focus {
+.header-contacts-item:hover, .header-contacts-item:focus, .site-nav-item:active, .site-nav-item.current:active {
     color: var(--primary-brand);
 }
 .site-nav-item.current {
